@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "esnext",                      
+        "module": "none",                         
+        "outDir": "./build",                        
+        "strict": true,                          
+        "esModuleInterop": true                   
+    }
+}

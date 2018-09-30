@@ -1,0 +1,23 @@
+{
+  "name": "rpc-express",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "example-server": "node example/server/index.js",
+    "example-client": "node example/client/index.js"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/msgpack-lite": "^0.1.6",
+    "@types/node-fetch": "^2.1.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-fetch": "^2.2.0",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "msgpack-lite": "^0.1.26"
+  }
+}
