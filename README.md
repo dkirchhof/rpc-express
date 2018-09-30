@@ -14,7 +14,7 @@ Communicate with your server in a typesafe way. Use server-side functions just l
 ### Client
 1. Create a wrapper for this interface. Specify the fetch function like from the [native fetch api](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [node-fetch](https://www.npmjs.com/package/node-fetch) and the server url:
     ```ts
-    import { createRPCClient } from "rpc-express/client";
+    import { createRPCClient } from "rpc-express";
     import { IAPI } from "../common/IAPI";
 
     const client = createRPCClient<IAPI>(window.fetch, "http://localhost:3000/rpc");
@@ -36,7 +36,7 @@ Communicate with your server in a typesafe way. Use server-side functions just l
 1. Connect the wrapper to an express server. Define the endpoint and use the raw body parser:
     ```ts
     import { raw } from "body-parser";
-    import { connectRemoteFunctions } from "rpc-express/server";
+    import { connectRemoteFunctions } from "rpc-express";
 
     app.use(raw());
 
